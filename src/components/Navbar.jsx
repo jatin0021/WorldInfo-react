@@ -13,7 +13,7 @@ function Navbar() {
     <div className='bg-[#22262b] shadow-lg sticky top-0 z-50'>
       <div className='flex h-20 justify-between items-center max-w-250 mx-auto px-4'>
         <div>
-          <NavLink to="/"><h1 className='text-2xl font-bold'>World Atlas</h1></NavLink>
+          <NavLink to="/"><h1 className='text-2xl font-bold'>CountriesInfo</h1></NavLink>
         </div>
         
         {/* Desktop Menu */}

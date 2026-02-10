@@ -24,7 +24,7 @@ function CountryDetails() {
         <div className='flex justify-center items-center'>
             <img className='w-full max-w-sm h-auto shadow-md rounded-lg' src={country.flags.svg} alt={country.name.official} />
         </div>
-        <div className='mt-5 md:mt-0'>
+        <div className='mt-5 md:mt-4'>
           <h1 className="text-3xl font-bold mb-6">{country.name.official}</h1>
 
           <p className='my-2 text-lg'>
