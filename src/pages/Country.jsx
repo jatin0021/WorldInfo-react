@@ -32,7 +32,7 @@ function Country() {
   const filterCountries = countries.filter((country)=> searchCountry(country) && filterRegion(country))
 
   return (
-    <section className="max-w-280 mx-auto my-10">
+    <section className="max-w-280 mx-auto my-10 px-4">
       <SearchFilter
         search={search}
         setSearch={setSearch}
@@ -41,9 +41,9 @@ function Country() {
         countries={countries}
         setCountries={setCountries}
       />
-      <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 items-center">
+      <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {filterCountries.map((curCountry) => {
-          return <CountryCard country={curCountry} key={indexedDB} />;
+          return <CountryCard country={curCountry} key={curCountry.name.common} />;
         })}
       </ul>
     </section>

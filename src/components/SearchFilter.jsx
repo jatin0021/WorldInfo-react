@@ -25,19 +25,19 @@ function SearchFilter({
   };
 
   return (
-    <div className="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-4 max-w-300 mx-auto my-10 ">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-300 mx-auto my-10 px-4">
       <input
         type="text"
         placeholder="search"
         value={search}
         onChange={handleInputChanges}
-        className="w-50 rounded-xl p-2 border border-gray-400 outline-0 cursor-pointer"
+        className="w-full rounded-xl p-2 border border-gray-400 outline-0 cursor-pointer"
       />
 
-      <div className="text-center w-35 rounded-xl  border border-gray-400 outline-0 cursor-pointer">
+      <div className="text-center w-full rounded-xl border border-gray-400 outline-0 cursor-pointer">
         <button className="cursor-pointer w-full p-2" onClick={()=>sortCountries("asc")}>Asc</button>
       </div>
-      <div className="text-center w-35 rounded-xl border border-gray-400 outline-0 cursor-pointer">
+      <div className="text-center w-full rounded-xl border border-gray-400 outline-0 cursor-pointer">
         <button className="cursor-pointer w-full p-2" onClick={()=>sortCountries("dsc")}>Dsc</button>
       </div>
 
@@ -47,7 +47,7 @@ function SearchFilter({
           id=""
           value={filter}
           onChange={handleSelect}
-          className="text-center w-35 rounded-xl p-2 border border-gray-400 outline-0 cursor-pointer"
+          className="text-center w-full rounded-xl p-2 border border-gray-400 outline-0 cursor-pointer"
         >
           <option className="bg-gray-600 text-start " value="All">
             All

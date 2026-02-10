@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 function CountryCard({ country }) {
     const { flags, name, population, region, capital } = country;
     return (
-        <div className='w-60 border border-gray-700 rounded-2xl bg-linear-to-r from-black-900 to-gray-900 px-4 pt-2 pb-4'>
+        <div className='w-full h-full border border-gray-700 rounded-2xl bg-linear-to-r from-black-900 to-gray-900 px-4 pt-2 pb-4 shadow-md hover:scale-105 transition-transform duration-300'>
             <li className='pb'>
                 <div>
                     <img className='h-30 ' src={flags.svg} alt="" />
