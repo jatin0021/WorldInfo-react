@@ -1,0 +1,15 @@
+[{
+ "icon":"MdPlace",
+ "title": "Find me",
+ "details": "Anywhere in the world"
+},
+{
+"icon":"IoCallSharp",
+ "title": "call me",
+ "details": "Anywhere in the world"
+},
+{
+"icon":"TbMailPlus",
+ "title": "mail me",
+ "details": "jatinnb@gmail.com"
+}]
