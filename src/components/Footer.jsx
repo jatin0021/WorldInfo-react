@@ -13,14 +13,13 @@ function Footer() {
   }
 
   return (
-    
-    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 pl-40 bg-[#22262b] py-4 '>
+    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 bg-[#22262b] py-4 pl-20 sm:pl-25 md:pl-40 w-full'>
         {footerData.map((curData, index)=>{
           const {icon, title, details} = curData;
           return (
             <div className='flex gap-3 items-center' key={index}>
               <div>{footerIcon[icon]}</div>
-              <div className='gap-4'>
+              <div className='gap-4 my-2 sm:my-0'>
                 <p className='font-bold text-xl'>{title}</p>
                 <p className='text-medium text-gray-500'>{details}</p>
               </div>
@@ -28,7 +27,6 @@ function Footer() {
           )
         })}
     </div>
-   
   )
 }
 
